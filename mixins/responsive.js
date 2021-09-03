@@ -1,12 +1,10 @@
 export const responsive = {
   computed: {
-    laptopRes() {
+    mobileRes() {
       switch (this.$vuetify.breakpoint.name) {
-        case 'md':
+        case 'xs':
           return true
-        case 'lg':
-          return true
-        case 'xl':
+        case 'sm':
           return true
         default:
           return false
